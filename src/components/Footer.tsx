@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} DuoCircle LLC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Email Timers. All rights reserved.</p>
         </div>
       </div>
     </footer>

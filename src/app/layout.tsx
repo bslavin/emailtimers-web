@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     "Create animated countdown timers for your email marketing campaigns. Drive urgency, boost engagement, and increase conversions. Free plan with 1.25M impressions/month.",
   keywords:
     "email countdown timer, email marketing timer, countdown GIF, email timer generator, marketing countdown, evergreen timer, email campaign timer",
-  authors: [{ name: "DuoCircle LLC" }],
-  creator: "DuoCircle LLC",
-  publisher: "DuoCircle LLC",
+  authors: [{ name: "Email Timers" }],
+  creator: "Email Timers",
+  publisher: "Email Timers",
   metadataBase: new URL("https://www.emailtimers.com"),
   openGraph: {
     title: "Email Countdown Timers for Marketing Campaigns | Email Timers",
@@ -61,7 +61,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Email Timers",
-    alternateName: "DuoCircle LLC",
+    alternateName: "Email Timers",
     url: "https://www.emailtimers.com",
     description:
       "Create animated countdown timers for email marketing campaigns. Drive urgency, boost engagement, and increase conversions.",
