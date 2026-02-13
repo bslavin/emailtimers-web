@@ -1,8 +1,4 @@
-import type { Handler } from "@netlify/functions"
-
-const TURNSTILE_SECRET = process.env.TURNSTILE_SECRET_KEY
-
-const handler: Handler = async (event) => {
+exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method not allowed" }
   }
@@ -18,7 +14,7 @@ const handler: Handler = async (event) => {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams({
-      secret: TURNSTILE_SECRET || "",
+      secret: process.env.TURNSTILE_SECRET_KEY || "",
       response: token,
       remoteip: event.headers["x-forwarded-for"] || "",
     }),
@@ -44,5 +40,3 @@ const handler: Handler = async (event) => {
     body: JSON.stringify({ success: true }),
   }
 }
-
-export { handler }
