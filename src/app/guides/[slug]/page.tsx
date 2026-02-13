@@ -431,26 +431,28 @@ export function generateStaticParams() {
   return Object.keys(guides).map((slug) => ({ slug }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const guide = guides[params.slug]
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const guide = guides[slug]
   if (!guide) return { title: "Guide Not Found" }
 
   return {
     title: `${guide.name} Timer Setup Guide — Email Timers`,
     description: guide.description,
     alternates: {
-      canonical: `https://www.emailtimers.com/guides/${params.slug}`,
+      canonical: `https://www.emailtimers.com/guides/${slug}`,
     },
     openGraph: {
       title: `${guide.name} Countdown Timer Setup | Email Timers`,
       description: guide.description,
-      url: `https://www.emailtimers.com/guides/${params.slug}`,
+      url: `https://www.emailtimers.com/guides/${slug}`,
     },
   }
 }
 
-export default function GuidePage({ params }: { params: { slug: string } }) {
-  const guide = guides[params.slug]
+export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const guide = guides[slug]
 
   if (!guide) {
     return (
@@ -469,7 +471,7 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.emailtimers.com" },
       { "@type": "ListItem", position: 2, name: "Setup Guides", item: "https://www.emailtimers.com/guides" },
-      { "@type": "ListItem", position: 3, name: guide.name, item: `https://www.emailtimers.com/guides/${params.slug}` },
+      { "@type": "ListItem", position: 3, name: guide.name, item: `https://www.emailtimers.com/guides/${slug}` },
     ],
   }
 
