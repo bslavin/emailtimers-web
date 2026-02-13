@@ -28,9 +28,11 @@ export default function SendPreview() {
         ;(window as any)._turnstileRendered = true
         widgetIdRef.current = (window as any).turnstile.render(turnstileRef.current, {
           sitekey: TURNSTILE_SITE_KEY,
-          appearance: "interaction-only",
+          appearance: "always",
+          size: "normal",
           callback: (token: string) => setTurnstileToken(token),
           "expired-callback": () => setTurnstileToken(null),
+          "error-callback": () => setTurnstileToken(null),
         })
       }
     }
@@ -108,7 +110,7 @@ export default function SendPreview() {
               type="submit"
               className="w-full"
               size="lg"
-              disabled={status === "loading"}
+              disabled={status === "loading" || !turnstileToken}
             >
               {status === "loading" ? (
                 <>
