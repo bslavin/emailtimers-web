@@ -8,10 +8,24 @@ export default function HeroSection() {
     <section className="relative overflow-hidden bg-white py-16 md:py-24">
       <div className="container relative">
         <div className="mx-auto max-w-4xl text-center">
-          {/* Badge */}
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-primary/20 bg-brand-primary/5 px-4 py-1.5 text-sm font-medium text-brand-primary">
-            <Clock className="h-4 w-4" />
-            Countdown Timers for Email Marketing
+          {/* Badges */}
+          <div className="mb-6 flex flex-wrap items-center justify-center gap-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-primary/20 bg-brand-primary/5 px-3 py-1 text-sm font-medium text-brand-primary">
+              <Clock className="h-3.5 w-3.5" />
+              Email Marketing Timers
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-primary/20 bg-brand-primary/5 px-3 py-1 text-sm font-medium text-brand-primary">
+              Boost Conversions
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-primary/20 bg-brand-primary/5 px-3 py-1 text-sm font-medium text-brand-primary">
+              Create Urgency
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-primary/20 bg-brand-primary/5 px-3 py-1 text-sm font-medium text-brand-primary">
+              Drive Clicks
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-primary/20 bg-brand-primary/5 px-3 py-1 text-sm font-medium text-brand-primary">
+              No Code Required
+            </span>
           </div>
 
           {/* Headline */}
