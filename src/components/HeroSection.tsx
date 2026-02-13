@@ -1,0 +1,72 @@
+import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import { Clock } from "lucide-react"
+
+export default function HeroSection() {
+  return (
+    <section className="relative overflow-hidden bg-white py-16 md:py-24">
+      <div className="container relative">
+        <div className="mx-auto max-w-4xl text-center">
+          {/* Badge */}
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-primary/20 bg-brand-primary/5 px-4 py-1.5 text-sm font-medium text-brand-primary">
+            <Clock className="h-4 w-4" />
+            Countdown Timers for Email Marketing
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+            Countdown Timers{" "}
+            <span className="text-brand-primary">
+              for Email.
+            </span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 md:text-xl">
+            Increase engagement, conversions, and sales with animated countdown timers
+            that update in real-time every time your email is opened.
+          </p>
+
+          {/* CTAs */}
+          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <Button asChild size="xl">
+              <a href="https://app.emailtimers.com/users/sign-up">Start Free</a>
+            </Button>
+            <Button asChild variant="secondary" size="xl">
+              <a href="/pricing">See Pricing</a>
+            </Button>
+          </div>
+
+          {/* Animated timer preview */}
+          <div className="mx-auto mt-14 max-w-3xl">
+            <Image
+              src="/screenshots/email-timer-animated.gif"
+              alt="Animated countdown timer showing days, hours, minutes and seconds ticking down in real-time"
+              width={900}
+              height={450}
+              className="w-full rounded-xl"
+              priority
+              unoptimized
+            />
+          </div>
+
+          {/* Metrics */}
+          <div className="mx-auto mt-12 grid max-w-lg grid-cols-3 gap-8 border-t border-gray-200 pt-8">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-gray-900 md:text-3xl">1.25M</div>
+              <div className="mt-1 text-sm text-gray-500">Free impressions/mo</div>
+            </div>
+            <div className="text-center border-x border-gray-200">
+              <div className="text-2xl font-bold text-gray-900 md:text-3xl">12+</div>
+              <div className="mt-1 text-sm text-gray-500">Integrations</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-gray-900 md:text-3xl">99.9%</div>
+              <div className="mt-1 text-sm text-gray-500">Uptime</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

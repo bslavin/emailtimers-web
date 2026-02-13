@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.redirects]
+  pretty_urls = true
