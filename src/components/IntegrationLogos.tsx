@@ -22,7 +22,7 @@ export default function IntegrationLogos() {
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">
-            Works with your email platform
+            Works with EVERY email platform
           </h2>
           <p className="mt-4 text-lg text-gray-600">
             Just paste your timer&apos;s embed code — it works everywhere. We have{" "}
