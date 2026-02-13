@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { Clock } from "lucide-react"
+import SendPreview from "@/components/SendPreview"
 
 export default function HeroSection() {
   return (
@@ -65,6 +66,8 @@ export default function HeroSection() {
               <div className="mt-1 text-sm text-gray-500">Uptime</div>
             </div>
           </div>
+          {/* Send preview form */}
+          <SendPreview />
         </div>
       </div>
     </section>
