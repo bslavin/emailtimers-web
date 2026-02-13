@@ -16,7 +16,8 @@ export default function HeroSection() {
 
           {/* Headline */}
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-            <span className="text-brand-primary">FREE</span> Countdown Timers{" "}
+            <span className="text-brand-primary">FREE</span> Countdown Timers
+            <br />
             for Email.
           </h1>
 
