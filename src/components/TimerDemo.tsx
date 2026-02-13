@@ -14,39 +14,8 @@ export default function TimerDemo() {
           </p>
         </div>
 
-        <div className="mx-auto mt-14 grid max-w-5xl gap-10 md:grid-cols-2 items-center">
-          {/* App dashboard screenshot */}
-          <div>
-            <Image
-              src="/screenshots/perspective-app.png"
-              alt="Email Timers dashboard showing the timer creation interface with customization options"
-              width={800}
-              height={600}
-              className="w-full rounded-xl shadow-2xl"
-            />
-          </div>
-
-          {/* Phone + feature callouts */}
-          <div className="flex flex-col items-center gap-8">
-            <Image
-              src="/screenshots/phone-email-timer.png"
-              alt="Countdown timer displayed on a mobile phone showing perfect rendering in mobile email clients"
-              width={400}
-              height={600}
-              className="w-64 md:w-72"
-            />
-            <div className="text-center">
-              <h3 className="text-xl font-bold text-gray-900">Works on every device</h3>
-              <p className="mt-2 text-gray-600">
-                Desktop, mobile, webmail — your timers look great everywhere.
-                No JavaScript, no special rendering needed.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Full app screenshot */}
-        <div className="mx-auto mt-16 max-w-4xl">
+        {/* Dashboard overview */}
+        <div className="mx-auto mt-14 max-w-4xl">
           <h3 className="text-center text-xl font-bold text-gray-900 mb-6">
             Create timers in minutes
           </h3>
