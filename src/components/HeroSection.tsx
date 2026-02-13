@@ -71,8 +71,8 @@ export default function HeroSection() {
               <div className="mt-1 text-sm text-gray-500">Free impressions/mo</div>
             </div>
             <div className="text-center border-x border-gray-200">
-              <div className="text-2xl font-bold text-gray-900 md:text-3xl">12+</div>
-              <div className="mt-1 text-sm text-gray-500">Integrations</div>
+              <div className="text-2xl font-bold text-gray-900 md:text-3xl">Every</div>
+              <div className="mt-1 text-sm text-gray-500">Email client supported</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-gray-900 md:text-3xl">99.9%</div>
