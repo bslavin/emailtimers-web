@@ -6,7 +6,7 @@ import CTASection from "@/components/CTASection"
 export const metadata: Metadata = {
   title: "Features — Email Countdown Timer Capabilities",
   description:
-    "Explore Email Timers features: multiple timer types, full customization, global CDN, real-time analytics, 12+ integrations, and mobile compatibility.",
+    "Explore Email Timers features: multiple timer types, full customization, global CDN, real-time analytics, universal email compatibility, and mobile support.",
   alternates: {
     canonical: "https://www.emailtimers.com/features",
   },
@@ -93,8 +93,8 @@ const featureGroups = [
       },
       {
         icon: Mail,
-        title: "12+ Platform Integrations",
-        description: "Works with MailChimp, HubSpot, Gmail, Constant Contact, ConvertKit, Drip, AWeber, and more. Just paste the embed code — it works everywhere.",
+        title: "Every Email Platform",
+        description: "Works with MailChimp, HubSpot, Gmail, Constant Contact, ConvertKit, Drip, AWeber, and every tool that supports images. Just paste the embed code.",
       },
       {
         icon: Smartphone,

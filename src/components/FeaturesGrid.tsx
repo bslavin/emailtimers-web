@@ -28,9 +28,9 @@ const features = [
   },
   {
     icon: Mail,
-    title: "12+ Integrations",
+    title: "Every Email Tool",
     description:
-      "Works with MailChimp, HubSpot, Gmail, Constant Contact, ConvertKit, and more. Just paste the embed code.",
+      "Works with MailChimp, HubSpot, Gmail, Constant Contact, ConvertKit, and every platform that supports images. Just paste the embed code.",
   },
   {
     icon: Smartphone,

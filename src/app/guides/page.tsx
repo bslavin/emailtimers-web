@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Setup Guides — Add Countdown Timers to Any Email Platform",
     description:
-      "Step-by-step embed instructions for 12+ email platforms including MailChimp, HubSpot, and Gmail.",
+      "Step-by-step embed instructions for every major email platform including MailChimp, HubSpot, and Gmail.",
     url: "https://www.emailtimers.com/guides",
   },
 }

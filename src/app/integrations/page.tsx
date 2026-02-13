@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Integrations — Email Platform Compatibility | Email Timers",
     description:
-      "Works with 12+ email platforms. Paste the embed code and you're done.",
+      "Works with every email platform. Paste the embed code and you're done.",
     url: "https://www.emailtimers.com/integrations",
   },
 }
