@@ -41,7 +41,7 @@ export default function TimerDemo() {
             alt="Timer showing a custom 'Deal Expired' message after the countdown reaches zero"
             width={600}
             height={200}
-            className="mx-auto w-full max-w-lg rounded-xl border border-gray-200"
+            className="mx-auto w-full max-w-3xl rounded-xl border border-gray-200"
             unoptimized
           />
         </div>
